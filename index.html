@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impact Hub · Hanin Bchir</title>
+<meta name="description" content="UNESCO–SIGHT Ambassador Program 2026: SAMAA, EcoSTEM Changemakers Lab and Digital Waves, with evidence and links.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sun:#F3D33E; --cream:#FCF6DC; --paper:#FFFDF4;
+  --blue:#0672BC; --ink:#0B2F5E; --muted:#4A6487;
+  --green:#2F8935; --line:#E7DDB0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+h1,h2,h3,.num{font-family:"League Spartan",system-ui,sans-serif;line-height:1.1}
+a{color:var(--blue)}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* hero */
+header{background:var(--sun);position:relative;overflow:hidden}
+header::after{content:"";position:absolute;inset:auto -10% -60px -10%;height:120px;background:var(--paper);border-radius:50% 50% 0 0}
+.top{display:flex;align-items:center;gap:18px;padding:22px 0;flex-wrap:wrap}
+.top img{height:46px;width:auto;background:#fff;border-radius:10px;padding:6px 10px}
+.top span{margin-left:auto;font-weight:600;font-size:14px;color:var(--ink);opacity:.8}
+.hero{padding:40px 0 110px;position:relative;z-index:1}
+.eyebrow{font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;color:var(--green)}
+.hero h1{font-size:clamp(34px,6vw,64px);color:var(--ink);margin:12px 0 16px;max-width:15ch}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero p{max-width:62ch;font-size:18px}
+.who{margin-top:20px;font-weight:600}
+.who small{display:block;font-weight:400;color:var(--muted);font-size:15px}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:-60px;position:relative;z-index:2}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 12px;text-align:center;box-shadow:0 6px 20px rgba(11,47,94,.06)}
+.num{font-size:44px;color:var(--green);font-weight:700}
+.stat div:last-child{font-size:14px;color:var(--muted);font-weight:500}
+
+/* path */
+.path{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:48px 0 8px}
+.path a{text-decoration:none;font-family:"League Spartan";font-weight:600;font-size:20px;color:var(--ink);background:var(--cream);border:1px solid var(--line);padding:10px 18px;border-radius:999px}
+.path a:hover{background:var(--sun)}
+.path i{font-style:normal;align-self:center;color:var(--blue);font-weight:700}
+
+section.mission{padding:56px 0;border-bottom:1px solid var(--line)}
+.tag{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--blue);padding:4px 12px;border-radius:999px}
+.mission h2{font-size:clamp(28px,4vw,42px);margin:12px 0 6px}
+.meta{color:var(--muted);font-weight:500;margin-bottom:22px}
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+.mission h3{font-size:22px;color:var(--blue);margin:22px 0 8px}
+.mission h3:first-child{margin-top:0}
+ul.clean{list-style:none}
+ul.clean li{padding-left:22px;position:relative;margin:6px 0}
+ul.clean li::before{content:"";position:absolute;left:4px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.impact{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-top:20px}
+.impact strong{color:var(--green)}
+.kpis{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.kpis span{background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:15px}
+.kpis b{color:var(--green);font-family:"League Spartan";font-size:20px;margin-right:4px}
+.sdg{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.sdg span{font-size:13px;font-weight:600;border-radius:6px;padding:4px 9px;color:#fff}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.links a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--blue);border-radius:10px;padding:8px 14px;color:var(--blue);background:#fff}
+.links a:hover{background:var(--blue);color:#fff}
+.links a.primary{background:var(--blue);color:#fff}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;cursor:zoom-in;transition:transform .2s}
+.gallery img:hover{transform:scale(1.02)}
+.gallery img.wide{grid-column:span 2;aspect-ratio:2/1}
+.samaa-fig img{border-radius:16px;border:1px solid var(--line);cursor:zoom-in}
+
+/* partners */
+.partners{padding:56px 0}
+.partners h2{font-size:34px;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:500}
+footer{background:var(--ink);color:#DCE6F5;padding:28px 0;font-size:14px}
+footer a{color:#fff}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(5,20,45,.92);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:90vh;max-width:95vw;border-radius:10px}
+
+@media (max-width:860px){
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .grid2{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .num{font-size:36px}
+  .top span{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="top">
+      <img src="img/logo_esprim.png" alt="IEEE ESPRIM Student Branch">
+      <img src="img/logo_sight.png" alt="IEEE SIGHT Tunisia Section">
+      <span>ICSRC 2026 · Tunis · 27–29 Nov</span>
+    </div>
+    <div class="hero">
+      <div class="eyebrow">UNESCO–SIGHT Changemakers &amp; Ambassadors Program 2026</div>
+      <h1>From shore to screen: <em>youth-led technology</em> for inclusive health &amp; cleaner coasts</h1>
+      <p>Three missions that turn technology into concrete action for people and the planet: an inclusive e-health platform for deaf patients, a hybrid STEM and beach clean-up initiative, and a digital challenge to protect Mediterranean sea turtles.</p>
+      <div class="who">Hanin Bchir<small>Chairwoman, IEEE ESPRIM Student Branch · UNESCO–SIGHT Ambassador, IEEE SIGHT Tunisia Section × UNESCO Chair EDE</small></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="num">3</div><div>missions</div></div>
+    <div class="stat"><div class="num">92</div><div>participants</div></div>
+    <div class="stat"><div class="num">55</div><div>IEEE members</div></div>
+    <div class="stat"><div class="num">5</div><div>partner organisations</div></div>
+    <div class="stat"><div class="num">11</div><div>SDGs addressed</div></div>
+    <div class="stat"><div class="num">2</div><div>funding applications</div></div>
+  </div>
+
+  <nav class="path" aria-label="Missions">
+    <a href="#samaa">Innovate · SAMAA</a><i>→</i>
+    <a href="#ecostem">Act · EcoSTEM Lab</a><i>→</i>
+    <a href="#digital-waves">Create · Digital Waves</a>
+  </nav>
+
+  <!-- MISSION 1 -->
+  <section class="mission" id="samaa">
+    <span class="tag">Mission 1 · SDG project</span>
+    <h2>SAMAA: breaking the silence in healthcare</h2>
+    <p class="meta">Inclusive e-health web platform for deaf and hard-of-hearing patients in Tunisia</p>
+    <div class="grid2">
+      <div>
+        <h3>The problem</h3>
+        <p>Hospitals in Tunisia rarely have medical sign-language interpreters. For deaf patients this means misdiagnosis, fear and exclusion from care.</p>
+        <h3>The solution</h3>
+        <ul class="clean">
+          <li><b>Three user profiles:</b> patients who read and write, who speak but don't hear, and who rely entirely on sign language.</li>
+          <li><b>Many ways to communicate:</b> text input, speech-to-text, and sign-language video capture interpreted by AI.</li>
+          <li><b>Visual medical keyboard:</b> categorised, colour-coded buttons linked to Tunisian Sign Language videos, so doctors can communicate with no prior training.</li>
+          <li><b>Accessible by design (WCAG):</b> adjustable text size, high-contrast themes, emoji navigation, video-guided UI for non-readers.</li>
+          <li><b>Beyond the consultation:</b> digital medical ID card, volunteer interpreters on real-time video calls (WebRTC), and a community space for inclusive cultural and sports events.</li>
+          <li><b>Trilingual:</b> French, Arabic and Tunisian.</li>
+        </ul>
+        <div class="impact">
+          <strong>Impact:</strong> reaches an underserved community, can be deployed in hospitals and clinics, scales to other sign languages, and promotes health equality.
+          <div class="sdg"><span style="background:#4C9F38">SDG 3 · Good health</span><span style="background:#DD1367">SDG 10 · Reduced inequalities</span></div>
+        </div>
+        <div class="links">
+          <a class="primary" href="https://github.com/hanin-bchir/fJ" target="_blank" rel="noopener">Source code on GitHub ↗</a>
+        </div>
+        <p class="meta" style="margin-top:14px">Built with React, TypeScript, Tailwind CSS, Node.js, Web Speech API, MediaRecorder, WebRTC and Google Gemini AI.</p>
+      </div>
+      <figure class="samaa-fig"><img src="img/samaa.jpg" alt="SAMAA project breakdown: problem, solution and impact"></figure>
+    </div>
+  </section>
+
+  <!-- MISSION 2 -->
+  <section class="mission" id="ecostem">
+    <span class="tag">Mission 2 · Action 1</span>
+    <h2>EcoSTEM Changemakers Lab</h2>
+    <p class="meta">7 July 2026 (online) &amp; 11 July 2026 (Qaraiya Beach, Monastir) · Young innovators building sustainable solutions</p>
+    <div class="grid2">
+      <div>
+        <p>A hybrid humanitarian initiative that combined two challenge themes, the <b>Green Campus / Green Community Challenge</b> and the <b>Women &amp; Youth in STEM Impact Sprint</b>, into one project.</p>
+        <h3>Session 1 · Women &amp; Youth Driving Sustainable Innovation</h3>
+        <p>Online on Google Meet with IEEE WIE ISIMM. Speakers Manar Bouaouina and Mohamed Yasser Bedioui (IEEE Tunisia Section &amp; IEEE ISIMM SB) covered humanitarian technologies, IEEE SIGHT, women in STEM, sustainable innovation and climate action.</p>
+        <div class="links">
+          <a href="https://events.vtools.ieee.org/m/568948" target="_blank" rel="noopener">vTools event ↗</a>
+          <a href="https://www.instagram.com/p/DaeJL29CKG7/" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.facebook.com/share/p/1KEsiNX1iB/" target="_blank" rel="noopener">Facebook ↗</a>
+        </div>
+        <h3>Session 2 · Clean the Beach, Protect the Blue</h3>
+        <p>At Qaraiya Beach with Notre Grand Bleu and Hedi Khefacha High School: an awareness stand on marine ecosystems, plastic pollution and sustainable habits, followed by a beach clean-up by several volunteer teams.</p>
+        <div class="links">
+          <a href="https://events.vtools.ieee.org/m/569129" target="_blank" rel="noopener">vTools event ↗</a>
+          <a href="https://www.instagram.com/p/DaoPwOgDCIu/" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.facebook.com/share/p/18zgN2v5Zq/" target="_blank" rel="noopener">Facebook ↗</a>
+          <a href="https://www.instagram.com/p/DasnozHDN9s/" target="_blank" rel="noopener">Photos (Instagram) ↗</a>
+          <a href="https://www.facebook.com/share/p/1EbHkpmBFC/" target="_blank" rel="noopener">Photos (Facebook) ↗</a>
+        </div>
+        <div class="impact">
+          <strong>Impact</strong>
+          <div class="kpis"><span><b>71</b>participants</span><span><b>36</b>online</span><span><b>35</b>on site</span><span><b>40</b>IEEE members</span><span><b>35</b>SIGHT members</span></div>
+          <ul class="clean" style="margin-top:10px">
+            <li>A cleaner public shoreline and more awareness of marine pollution and recycling.</li>
+            <li>High-school students and women introduced to STEM pathways and IEEE WIE.</li>
+            <li>A multi-stakeholder partnership: IEEE SIGHT, WIE, ESPRIM &amp; ISIMM SBs, Notre Grand Bleu and the UNESCO Chair EDE.</li>
+          </ul>
+          <div class="sdg"><span style="background:#C5192D">SDG 4</span><span style="background:#FF3A21">SDG 5</span><span style="background:#26BDE2">SDG 6</span><span style="background:#FD9D24">SDG 11</span><span style="background:#3F7E44">SDG 13</span><span style="background:#0A97D9">SDG 14</span><span style="background:#19486A">SDG 17</span></div>
+        </div>
+      </div>
+      <div class="gallery">
+        <img class="wide" src="img/m2_5.jpg" alt="Volunteers gathered on Qaraiya Beach" style="object-position:center 40%">
+        <img src="img/m2_6.jpg" alt="Volunteers collecting waste in blue bags">
+        <img src="img/m2_7.jpg" alt="Volunteer filling a waste bag">
+        <img src="img/m2_8.jpg" alt="High-school students collecting waste">
+        <img src="img/m2_9.jpg" alt="Clean-up teams on the beach">
+        <img src="img/m2_10.jpg" alt="Collected waste bags">
+        <img src="img/m2_4.jpg" alt="Clean the Beach, Protect the Blue event poster">
+        <img src="img/m2_1.jpg" alt="Online session speakers poster">
+        <img class="wide" src="img/m2_2.jpg" alt="Online session on Google Meet presenting the SDGs">
+        <img src="img/m2_3.jpg" alt="Online session slide on diversity in STEM">
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION 3 -->
+  <section class="mission" id="digital-waves">
+    <span class="tag">Mission 3 · Action 2</span>
+    <h2>Digital Waves: digital empowerment for sea turtle protection</h2>
+    <p class="meta">21 September 2026 · Notre Grand Bleu, Monastir · with IEEE WIE &amp; CS ISIMM</p>
+    <div class="grid2">
+      <div>
+        <p>Environmental awareness → digital empowerment → community engagement. The activity followed a challenge-based awareness model: <b>Discover → Learn → Collect → Create → Develop → Raise awareness</b>.</p>
+        <h3>What we did</h3>
+        <ul class="clean">
+          <li><b>Discover:</b> guided visit of Notre Grand Bleu at the Mediterranean Environmental Training Centre.</li>
+          <li><b>Learn:</b> Mediterranean sea turtle species, habitats, ecological role and threats (pollution, habitat degradation, bycatch), and why Posidonia oceanica matters.</li>
+          <li><b>Collect:</b> participants gathered and organised reliable information for public awareness.</li>
+          <li><b>Create:</b> the Sea Turtle Awareness Web Challenge, where teams combined research, UI/UX and web development to build awareness websites.</li>
+        </ul>
+        <div class="links">
+          <a href="https://events.vtools.ieee.org/m/578791" target="_blank" rel="noopener">vTools event ↗</a>
+          <a href="https://www.instagram.com/p/DdghTFzBL-r/" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.facebook.com/share/p/1D1Ec4RRsQ/" target="_blank" rel="noopener">Facebook ↗</a>
+          <a href="https://www.instagram.com/p/DdhPgjmiD1G/" target="_blank" rel="noopener">Photos (Instagram) ↗</a>
+          <a href="https://www.facebook.com/share/p/1J16PycfV5/" target="_blank" rel="noopener">Photos (Facebook) ↗</a>
+          <a href="https://www.instagram.com/reel/DdhefXKoG6M/" target="_blank" rel="noopener">Reel ↗</a>
+          <a href="https://www.tiktok.com/@ieee.sight.isimm/video/7687680657895558420" target="_blank" rel="noopener">TikTok 1 ↗</a>
+          <a href="https://www.tiktok.com/@ieee.sight.isimm/video/7687679822516014357" target="_blank" rel="noopener">TikTok 2 ↗</a>
+        </div>
+        <div class="impact">
+          <strong>Impact</strong>
+          <div class="kpis"><span><b>21</b>participants</span><span><b>15</b>IEEE members</span><span><b>9</b>SIGHT members</span><span><b>4</b>young innovators</span></div>
+          <ul class="clean" style="margin-top:10px">
+            <li><b>Environmental awareness</b> of sea turtles and the threats to their survival.</li>
+            <li><b>Digital empowerment:</b> an environmental issue turned into a practical web project.</li>
+            <li><b>Community engagement:</b> awareness content that can reach students and the wider public.</li>
+          </ul>
+          <div class="sdg"><span style="background:#C5192D">SDG 4</span><span style="background:#FD6925">SDG 9</span><span style="background:#DD1367">SDG 10</span><span style="background:#BF8B2E">SDG 12</span><span style="background:#3F7E44">SDG 13</span><span style="background:#0A97D9">SDG 14</span><span style="background:#19486A">SDG 17</span></div>
+        </div>
+      </div>
+      <div class="gallery">
+        <img class="wide" src="img/m3_2.jpg" alt="Digital Waves participants with the IEEE SIGHT banner by the sea">
+        <img src="img/m3_1.jpg" alt="Digital Waves event poster">
+        <img src="img/m3_3.jpg" alt="Guided visit of the Notre Grand Bleu centre">
+        <img src="img/m3_4.jpg" alt="Participants working on laptops at Notre Grand Bleu">
+        <img class="wide" src="img/m3_5.jpg" alt="Teams working on the web challenge">
+        <img src="img/m3_6.jpg" alt="Awareness session">
+        <img src="img/m3_7.jpg" alt="Participants presenting">
+        <img src="img/m3_8.jpg" alt="Participants during the session">
+        <img src="img/m3_9.jpg" alt="SIGHT letters at the venue">
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <h2>Partners &amp; thanks</h2>
+    <div class="chips">
+      <span>IEEE SIGHT Tunisia Section</span><span>UNESCO Chair EDE</span><span>IEEE ESPRIM Student Branch</span>
+      <span>IEEE ISIMM Student Branch &amp; SIGHT group</span><span>IEEE WIE ISIMM</span><span>IEEE CS ISIMM</span>
+      <span>Notre Grand Bleu</span><span>Hedi Khefacha High School</span><span>Fellow ambassador Wassim Zili</span>
+    </div>
+    <p class="meta" style="margin-top:18px">We also attended the SIGHT × CEDA webinar series (26–28 June 2026) and submitted two funding applications, to IEEE Tech4Good and the 2026 IEEE SIGHT Group Activity Initiative, to keep these activities going.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Hanin Bchir · UNESCO–SIGHT Ambassador 2026 · Poster presented at ICSRC 2026, Hôtel Africa, Tunis</div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-label="Photo viewer"><img alt=""></div>
+<script>
+const lb=document.getElementById('lb'), li=lb.querySelector('img');
+document.querySelectorAll('.gallery img, .samaa-fig img').forEach(im=>im.addEventListener('click',()=>{li.src=im.src;li.alt=im.alt;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+</script>
+</body>
+</html>
